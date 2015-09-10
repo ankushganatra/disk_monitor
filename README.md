@@ -21,8 +21,18 @@ Or install it yourself as:
     $ gem install disk_monitor
 
 ## Usage
+Task: 
+thor list => This would give you the available taks in thor. 
 
-TODO: Write usage instructions here
+Execution from console: 
+	thor disk_usage:get 
+	Give the hash of disk usage
+
+Using with class 
+	require 'disk_monitor'
+	DiskMonitor::Usage.find 
+
+	Returns array of hash with disk utilization. 
 
 ## Development
 
