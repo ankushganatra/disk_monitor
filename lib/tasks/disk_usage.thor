@@ -1,7 +1,7 @@
-require_relative "../disk_monitor/usage"
+require_relative "../disk_monitor"
 class DiskUsage < Thor
 	desc "get", "Prints the disk space utilized and free percentage"
 	def get
-		Usage.get
+		p DiskMonitor::Usage.find
 	end
 end
